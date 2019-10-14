@@ -1,14 +1,14 @@
 Snippets, options and other stuff i tend to forget while doing recon 
 
 
-## ASN lookup 
+### ASN lookup 
 
-### amass 
+#### amass 
 
-##### Find ASNs 
+###### Find ASNs 
 amass intel -org OrgName
 
-##### Find domains on ASN
+###### Find domains on ASN
 amass intel -active -asn 123,456,789
 
 #### ipinfo.io
