@@ -12,7 +12,7 @@ amass intel -org OrgName
 amass intel -active -asn 123,456,789
 
 #### ipinfo.io
-curl ipinfo.io/127.0.0.1
+curl http://ipinfo.io/127.0.0.1
 
 #### ASNLookup.com 
-curl -X GET http://asnlookup.com/api/lookup?org=Yahoo
+curl http://asnlookup.com/api/lookup?org=Yahoo
