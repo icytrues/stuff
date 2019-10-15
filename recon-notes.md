@@ -23,4 +23,4 @@ Snippets, options and other stuff i tend to forget while doing recon
 `curl -s "https://crt.sh/?q=%25.org.com&output=json" | jq -r '.[].name_value' | sed 's/\*\.//g' | sort -u`
 
 ###### dns. bufferover.run
-`curl -s http://dns.bufferover.run/dns?q=expressen.se | jq -r ".FDNS_A[],.RDNS[]" | cut -d',' -f2 | sort -u`
+`curl -s "http://dns.bufferover.run/dns?q=org.com" | jq -r ".FDNS_A[],.RDNS[]" | cut -d',' -f2 | sort -u`
