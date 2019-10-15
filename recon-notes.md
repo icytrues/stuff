@@ -1,7 +1,7 @@
 Snippets, options and other stuff i tend to forget while doing recon 
 
 
-### ASN lookup 
+### ASNs 
 
 #### amass 
 
@@ -16,3 +16,8 @@ Snippets, options and other stuff i tend to forget while doing recon
 
 #### ASNLookup.com 
 `curl http://asnlookup.com/api/lookup?org=OrgName`
+
+### Subdomains 
+
+###### crt.sh oneliner (thanks @nahamsec)
+`curl -s "https://crt.sh/?q=%25.example.com&output=json" | jq -r '.[].name_value' | sed 's/\*\.//g' | sort -u`
