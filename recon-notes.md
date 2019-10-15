@@ -20,4 +20,4 @@ Snippets, options and other stuff i tend to forget while doing recon
 ### Subdomains 
 
 ###### crt.sh oneliner (thanks @nahamsec)
-`curl -s "https://crt.sh/?q=%25.example.com&output=json" | jq -r '.[].name_value' | sed 's/\*\.//g' | sort -u`
+`curl -s "https://crt.sh/?q=%25.org.com&output=json" | jq -r '.[].name_value' | sed 's/\*\.//g' | sort -u`
